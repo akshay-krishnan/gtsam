@@ -154,7 +154,7 @@ class BinaryMeasurementsRot3 {
 };
 
 #include <gtsam/sfm/PathFactor.h>
-template <F = {gtsam::Rot3, gtsam::Pose3}>
+template <F = {gtsam::Rot3, gtsam::Pose3, gtsam::Rot2, gtsam::Pose2}>
 virtual class PathFactor : gtsam::NoiseModelFactor{
   PathFactor(size_t i, size_t j, const F& f_ij,
              const std::vector<gtsam::EdgeKey>& path,

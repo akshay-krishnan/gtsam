@@ -103,7 +103,7 @@ class PathFactor : public NoiseModelFactor {
   static KeyVector KeysfromPath(const std::vector<EdgeKey>& path) {
     KeyVector keys;
     for (const auto& ek : path) {
-      keys.push_back(static_cast<Key>(ek));
+      keys.push_back(ek.key());
     }
     return keys;
   }
